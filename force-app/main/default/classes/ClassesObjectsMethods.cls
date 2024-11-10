@@ -40,17 +40,23 @@ public with sharing class ClassesObjectsMethods {
      */
     public static List<String> practiceStringMethods() {
         // Initialize a String with 'Hello, Salesforce!'
-        
-        // Get the length of the String        
+        String myString = 'Hello, Salesforce!';
+        // Get the length of the String    
+        String length = String.valueOf(myString.length());    
         // Get a substring of the String of the first 5 characters
+        String substring = myString.substring(0, 5);
         // Convert the String to lower case
-        
+        String lowerCase = myString.toLowerCase();
         // Return the list with the string data
+        List<String> myList = new List<String>();
         // In the first position add the string length
+        myList.add(length);
         // In the second position add the substring
+        myList.add(substring);
         // In the third position add the string in lower case
+        myList.add(lowerCase);
 
-        return null; // Replace null with the variable you used to store the result
+        return myList; // Replace null with the variable you used to store the result
     }
 
     /**
