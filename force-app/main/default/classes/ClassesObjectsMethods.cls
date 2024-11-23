@@ -111,17 +111,23 @@ public with sharing class ClassesObjectsMethods {
      * @return The number of vowels in the string.
      */
     public static Integer countVowels(String str) {
-        // Initialize the result Integer
-
-        /*
-        for () {
-            // get individual characters from the string - hint use substring or split
-            // check if the character is a vowel
-            // if it is a vowel, increment the result Integer
+        if (String.isBlank(str)) {
+            return 0; // Return 0 if the string is null or empty
         }
-        */
 
-        return null; // Replace null with the variable you used to store the result
+        str = str.toLowerCase();
+        // Initialize the result Integer
+        Integer numberOfVowels = 0;  
+        for (Integer i = 0; i < str.length(); i++) {
+            // get individual characters from the string
+                String currentCharacter = str.substring(i, i + 1);
+            // check if the character is a vowel
+            if (currentCharacter.equals('a') || currentCharacter.equals('e') || currentCharacter.equals('i') || currentCharacter.equals('o') || currentCharacter.equals('u')) {
+                numberOfVowels++;
+            }
+        }
+        return numberOfVowels;
+        
     }
 
     /**
