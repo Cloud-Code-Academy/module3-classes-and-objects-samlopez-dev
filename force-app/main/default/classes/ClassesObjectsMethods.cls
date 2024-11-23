@@ -140,18 +140,22 @@ public with sharing class ClassesObjectsMethods {
     public static String findTheScientist() {
         // The list of scientists' names
         List<String> scientistNames = new List<String>{'Tim Berners-Lee', 'Alan Turing', 'Grace Hopper', 'Donald Knuth', 'Guido van Rossum', 'Ken Thompson', 'Stephen Hawking'};
-
         // The variable to store the concatenated string
-
+        String finalString = '';
         // Loop through the list of scientists' names
-
+        for (Integer i = 0; i < scientistNames.size(); i++) {
+            String currenName = scientistNames.get(i);
             // If the name doesn't contain the letter 'G', skip this iteration
-
+            if (!currenName.toUpperCase().contains('G')) {
+                continue;
+            }
             // Add the name to the result string, followed by a comma
-
+            finalString += currenName + ',';
         // Remove the last comma from the result string
-
-        return null; // Replace null with the variable you used to store the result
+            
+        }
+        finalString = finalString.removeEnd(',');
+        return finalString; // Replace null with the variable you used to store the result
     }
 
     /**
