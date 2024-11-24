@@ -304,7 +304,6 @@ public with sharing class ClassesObjectsMethodsTest {
     }
 
 
-    /* UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
     @IsTest
     static void testCreateMultiplePersons() {
         // Define a list of names and an age for testing
@@ -324,7 +323,6 @@ public with sharing class ClassesObjectsMethodsTest {
             Assert.areEqual(testAge, resultPersons[i].getAge(), 'The person\'s age should match the test age');
         }
     }
-    */
 
     /* UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
     @IsTest
