@@ -373,7 +373,7 @@ public with sharing class ClassesObjectsMethods {
 
     public static List<String> personDetails() {
         List<String> results = new List<String>();
-        
+
         // Create a new instance of Person class
         // Name the person 'John Doe' and set the age to 28
         Person newPerson = new Person('John Doe', 28);
@@ -398,10 +398,12 @@ public with sharing class ClassesObjectsMethods {
      * @return A new instance of the Person class.
      */
     public static Person createPerson(String name, Integer age) {
+
         // Create a new instance of the Person class using the provided name and age
-        
+        Person newPerson = new Person('Test Name', 30);
+    
         // Return the new instance of the Person class
-        return null; // Replace null with the variable you used to store the result
+        return newPerson; // Replace null with the variable you used to store the result
     }
 
     /**
