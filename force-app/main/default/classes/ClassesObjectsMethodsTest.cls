@@ -324,7 +324,7 @@ public with sharing class ClassesObjectsMethodsTest {
         }
     }
 
-    /* UNCOMMENT TEST METHODS BELOW ONCE THE BOOK AND PERSON CLASSES ARE SET UP
+
     @IsTest
     static void testGetOlderPerson() {
         // Create two Person objects with different ages
@@ -357,5 +357,5 @@ public with sharing class ClassesObjectsMethodsTest {
         // Check that the returned Person object is one of the two Persons
         Assert.isTrue(resultPerson == person1 || resultPerson == person2, 'The returned Person should be one of the two Persons');
     }
-    */
+    
 }
