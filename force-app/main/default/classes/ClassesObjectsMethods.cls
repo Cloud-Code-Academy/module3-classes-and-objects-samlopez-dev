@@ -111,10 +111,6 @@ public with sharing class ClassesObjectsMethods {
      * @return The number of vowels in the string.
      */
     public static Integer countVowels(String str) {
-        if (String.isBlank(str)) {
-            return 0; // Return 0 if the string is null or empty
-        }
-
         str = str.toLowerCase();
         // Initialize the result Integer
         Integer numberOfVowels = 0;  
