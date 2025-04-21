@@ -48,13 +48,8 @@ public with sharing class ClassesObjectsMethods {
         // Convert the String to lower case
         String lowerCase = myString.toLowerCase();
         // Return the list with the string data
-        List<String> myList = new List<String>();
-        // In the first position add the string length
-        myList.add(length);
-        // In the second position add the substring
-        myList.add(substring);
-        // In the third position add the string in lower case
-        myList.add(lowerCase);
+        List<String> myList = new List<String>{length, substring, lowerCase};
+        // myList.addAll(new List<String>{length, substring, lowerCase});
 
         return myList; // Replace null with the variable you used to store the result
     }
