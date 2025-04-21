@@ -258,8 +258,7 @@ public with sharing class ClassesObjectsMethods {
         // Method that returns the details of the book
         public String getBookDetails() {
             // return A string containing the details of the book in the format "Title: <title>, Author: <author>"
-            String bookDetails = 'Title: ' + title + ', Author: ' + author;
-            return bookDetails; // Replace null with the variable you used to store the result
+            return 'Title: ' + title + ', Author: ' + author;
         }
     }
     
